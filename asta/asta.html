@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            background-color: #4a0e0e; /* Cor vinho do fundo */
+            color: white;
+            font-family: sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            display: flex; /* Mantém um ao lado do outro */
+            align-items: center;
+            gap: 50px; /* Espaço entre o texto e o retângulo */
+            max-width: 1100px;
+            padding: 20px;
+        }
+
+        .texto {
+            flex: 1; /* Ocupa o lado esquerdo */
+        }
+
+        .texto h1 {
+            font-size: 60px; /* Ajustado para não ficar grande demais */
+            margin-bottom: 20px;
+            line-height: 1.1;
+        }
+
+        .texto p {
+            font-size: 20px;
+            line-height: 1.6;
+            text-align: left; /* Alinhado à esquerda como na imagem */
+        }
+
+        .foto-asta {
+            /* Retângulo em pé com as medidas que você pediu */
+            width: 400px;
+            height: 600px;
+            background-image: url('https://scc10.com.br/wp-content/uploads/2025/01/asta-black-clover-social.webp');
+            background-size: cover;
+            background-position: center;
+            border: 10px solid #fdf5e6; /* Borda bege clara */
+            border-radius: 20px;
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="texto">
+            <h1>Minha magia é nunca desistir!</h1>
+            <p>O Asta é o protagonista do anime Black Clover. Ele nasceu em um mundo de magia, mas sem nenhum poder mágico. Para compensar, ele treinou seu corpo ao extremo. No seu 15º aniversário, ele recebeu um Grimório de Cinco Folhas, que lhe deu o poder da Anti-Magia. Com isso, ele usa espadas pesadas para anular, cortar ou rebater qualquer feitiço dos inimigos. Ele faz parte do esquadrão Touros Negros e seu grande sonho é se tornar o Rei Mago para provar que, mesmo sendo um plebeu sem magia, o esforço supera o talento natural.</p>
+        </div>
+
+        <div class="foto-asta"></div>
+    </div>
+
+</body>
+</html>
