@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Asta - Black Clover</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
+
+        body {
+            background-color: #4a0e0e;
+            color: white;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start; /* Alinha o conteúdo ao início da tela */
+            min-height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            align-items: flex-start;
+            gap: 40px;
+            width: 100%;
+            max-width: 1300px;
+            /* Padding 0 na esquerda para colar na tela, e 40px nas outras direções */
+            padding: 40px 40px 40px 10px; 
+            margin-left: 0;
+        }
+
+        .texto {
+            flex: 1;
+            padding-left:110px; /* Pequeno ajuste para não tocar fisicamente na borda do monitor */
+        }
+
+        .texto h1 {
+            font-family: 'Irish Grover', cursive;
+            font-size:90px;
+            margin: 0 0 10px 0;
+            line-height: 0.8;
+            text-align: left;
+            /* Controla onde o título quebra para ficar igual à imagem */
+            max-width: 700px; 
+        }
+
+        .texto p {
+            font-family: 'Lao Sans Pro', sans-serif; 
+            font-size:27px;
+            color:#FFFACD;
+            line-height: 1.4;
+            margin: 0;
+            text-align: left;
+            max-width: 600px;
+        }
+
+        .wrapper-foto {
+            position: relative;
+            flex-shrink:10;
+            margin-top: 30px;
+        }
+
+        .wrapper-foto::before {
+            content: "";
+            position: absolute;
+            top: -15px;
+            left: 15px;
+            width: 100%;
+            height: 100%;
+            background-color: #FFFACD;
+            border-radius: 20px;
+            z-index: 1;
+        }
+
+        .foto-asta {
+            position: relative;
+            width: 500px;
+            height: 630px;
+            background-image: url('https://scc10.com.br/wp-content/uploads/2025/01/asta-black-clover-social.webp');
+            background-size: cover;
+            background-position: center;
+            border-radius: 20px;
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="texto">
+            <h1>Minha magia é nunca desistir!</h1>
+            <p>
+                O Asta é o protagonista do anime Black Clover. Ele nasceu em um mundo de magia, mas sem nenhum poder mágico. Para compensar, ele treinou seu corpo ao extremo. No seu 15º aniversário, ele recebeu um Grimório de Cinco Folhas, que lhe deu o poder da Anti-Magia. Com isso, ele usa espadas pesadas para anular, cortar ou rebater qualquer feitiço dos inimigos. Ele faz parte do esquadrão Touros Negros e seu grande sonho é se tornar o Rei Mago para provar que, mesmo sendo um plebeu sem magia, o esforço supera o talento natural.
+            </p>
+        </div>
+
+        <div class="wrapper-foto">
+            <div class="foto-asta"></div>
+        </div>
+    </div>
+
+</body>
+</html>
