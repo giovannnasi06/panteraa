@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro</title>
+  
+  <style>
+    body {
+      background: #530C0C;
+      font-family: Arial, sans-serif;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+    }
+
+    .caixa {
+      background: #FFFACD;
+      padding: 40px;
+      width: 420px;
+      border-radius: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      color: #530C0C;
+      margin-bottom: 25px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    input {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    .botoes {
+      margin-top: 25px;
+    }
+
+    button {
+      padding: 12px 20px;
+      margin: 0 8px;
+      border: none;
+      border-radius: 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .cancelar {
+      background: white;
+      color: black;
+    }
+
+    .cadastrar {
+      background: white;
+      color: black;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="caixa">
+    <h1>FAÇA SEU CADASTRO</h1>
+    
+    <p style="color:black; text-align:left;">Login</p>
+    <input type="text">
+
+    <p style="color:black; text-align:left;">Senha</p>
+    <input type="password">
+
+    <p style="color:black; text-align:left;">Nome</p>
+    <input type="text">
+
+    <p style="color:black; text-align:left;">Email</p>
+    <input type="email">
+
+    <div class="botoes">
+      <button class="cancelar">CANCELAR</button>
+      <button class="cadastrar">CADASTRAR</button>
+    </div>
+  </div>
+
+</body>
+</html>
