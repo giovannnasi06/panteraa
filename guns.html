@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Guns N' Roses</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Frijole&display=swap" rel="stylesheet">
+  
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      background: #530C0C;
+      color: #FFFFFF;
+      font-family: 'Frijole', cursive;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 50px 60px;
+      text-align: center;
+    }
+
+    /* Estrutura do Topo */
+    header {
+      width: 100%;
+      max-width: 1350px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+
+    .nav-group {
+      display: flex;
+      gap: 15px;
+    }
+
+    /* Botões Idênticos à Imagem */
+    .btn {
+      text-decoration: none;
+      color: #3B1F00;
+      background: #FDF1CC;
+      padding: 10px 25px;
+      border-radius: 20px;
+      font-family: Arial, sans-serif;
+      font-weight: bold;
+      font-size: 1.1rem;
+      border: none;
+      cursor: pointer;
+    }
+
+    .title {
+      font-size: 4.0rem;
+      color: #ffffff;
+    }
+
+    /* Moldura Central Mais Achatada */
+    .hero-frame {
+      width: 100%;
+      max-width: 800px;
+      background: #FDF1CC;
+      border: 12px solid #FDF1CC;
+      border-radius: 20px;
+      margin-bottom: 25px;
+    }
+
+    .hero-frame img {
+      width: 100%;
+      height: 150px; /* Força o visual mais achatado da foto */
+      display: block;
+      border-radius: 30px;
+      object-fit: cover;
+    }
+
+    /* Seção de Texto */
+    .headline {
+      margin-bottom: 15px;
+      font-size: 1.8rem;
+      color: #FDF1CC;
+    }
+
+    .description {
+      max-width: 1100px;
+      margin: 0 auto 35px;
+      font-size: 1.1rem;
+      line-height: 1.7;
+    }
+
+    /* Cards de Imagens Inferiores */
+    .cards {
+      display: flex;
+      justify-content: center;
+      gap: 60px;
+      width: 100%;
+      max-width: 1200px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background: #FDF1CC;
+      border: 12px solid #FDF1CC;
+      border-radius: 24px;
+      width: 240px;
+      height: 190px;
+      overflow: hidden;
+    }
+
+    .card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 12px;
+    }
+
+    @media (max-width: 860px) {
+      header {
+        flex-direction: column;
+        gap: 20px;
+      }
+      .cards {
+        gap: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="nav-group">
+      <button class="btn">Home</button>
+      <button class="btn">Sobre</button>
+    </div>
+    <h1 class="title">GUNS N' ROSES</h1>
+    <div class="nav-group">
+      <button class="btn">Login</button>
+    </div>
+  </header>
+
+  <div class="hero-frame">
+    <img src="guns.png" alt="Guns N Roses Foto Principal" />
+  </div>
+
+  <section>
+    <h2 class="headline">O QUE FOI A BANDA?</h2>
+    <p class="description">
+      O GUNS N' ROSES, FORMADO EM LOS ANGELES EM 1985, É UMA DAS MAIORES LENDAS DO HARD ROCK. CONHECIDA POR SUA ATITUDE REBELDE E ENERGÉTICA, A BANDA ALCANÇOU O ESTRELATO GLOBAL COM O ÁLBUM DE ESTREIA APPETITE FOR DESTRUCTION (1987) E SEUS GRANDES CLÁSSICOS COMO "WELCOME TO THE JUNGLE" E "SWEET CHILD O' MINE"
+    </p>
+  </section>
+
+  <div class="cards">
+    <div class="card">
+      <img src="nroses.jpg" alt="Foto Inferior 1" />
+    </div>
+    <div class="card">
+      <img src="guns1.png" alt="Foto Inferior 2" />
+    </div>
+    <div class="card">
+      <img src="rosas1.png" alt="Foto Inferior 3" />
+    </div>
+  </div>
+
+</body>
+</html>
